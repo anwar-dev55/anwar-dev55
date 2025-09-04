@@ -62,7 +62,7 @@
       <td><b>Chat App (Beginner)</b></td>
       <td>Node.js, Socket.io, MongoDB</td>
       <td>Real-time messaging, JWT, Rooms</td>
-      <td><i>Coming soon...</i></td>
+      <td><a href="https://github.com/anwar-dev55/Chatting-app">Repo</a></td>
     </tr>
   </tbody>
 </table>
@@ -78,57 +78,3 @@ app.use((err, req, res, next) => {
   const message = err.message || 'Internal Server Error';
   res.status(status).json({ success: false, message });
 });
-```
-
-```js
-// Example: Auth middleware (JWT)
-const jwt = require('jsonwebtoken');
-module.exports = function auth(req, res, next) {
-  const token = req.headers.authorization?.split(' ')[1];
-  if (!token) return res.status(401).json({ message: 'No token provided' });
-  try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = decoded;
-    next();
-  } catch {
-    return res.status(401).json({ message: 'Invalid token' });
-  }
-};
-```
-
-```js
-// Example: Task schema (Mongoose)
-const mongoose = require('mongoose');
-const taskSchema = new mongoose.Schema(
-  {
-    title: { type: String, required: true, trim: true },
-    description: { type: String, default: '' },
-    status: { type: String, enum: ['pending', 'in-progress', 'done'], default: 'pending' },
-    owner: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
-  },
-  { timestamps: true }
-);
-module.exports = mongoose.model('Task', taskSchema);
-```
-
----
-
-<h3>🏆 Certs & Achievements</h3>
-<ul>
-  <li>Built multiple REST APIs with JWT and robust middleware (validation, rate limiting, CORS).</li>
-  <li>Experience structuring production-ready Node/Express projects.</li>
-  <li>Active on GitHub sharing open-source backend projects.</li>
-</ul>
-
----
-
-<h3>📫 Where to find me</h3>
-<p>
-  <a href="https://github.com/anwar-dev55" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/anwar-marof-68518b323/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:anwar.dev55@gmail.com" target="_blank"><img alt="Email" src="https://img.shields.io/badge/Email-333333?&style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
-
----
-
-<p align="center">This README is handcrafted by <b>Anwar Marof</b> — Backend Developer (Node.js • Express • MongoDB • REST APIs)</p>
