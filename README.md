@@ -2,7 +2,7 @@
 
 <p>Welcome to my page! </br> I'm <b>Anwar Marof</b>, a <b>Backend Developer</b> from <img src="https://cdn-icons-png.flaticon.com/512/197/197600.png" width="13"/> <b>Egypt</b>.</p>
 
-<p>مرحبًا! أنا <b>أنور معروف</b> مطوّر Backend متخصص في <b>Node.js</b> و<b>Express</b> و<b>MongoDB</b>، أبني <b>REST APIs</b> نظيفة وآمنة، وأستخدم <b>React</b> لبناء واجهات تفاعلية، بالإضافة إلى <b>HTML</b> و<b>CSS</b> و<b>JavaScript</b>.</p>
+<p>مرحبًا! أنا <b>أنور معروف</b> مطوّر Backend متخصص في <b>Node.js</b> و<b>Express</b> و<b>MongoDB</b>، أبني <b>REST APIs</b> نظيفة وآمنة، وأستخدم <b>React</b> لبناء واجهات تفاعلية، بالإضافة إلى <b>HTML</b> و<b>CSS</b> و<b>JavaScript</b> و<b>Socket.IO</b> للتواصل اللحظي.</p>
 
 <h3>🛠️ Things I code with</h3>
 <p>
@@ -13,6 +13,7 @@
   <img alt="REST API" src="https://img.shields.io/badge/-REST%20API-0A66C2?style=flat-square" />
   <img alt="JWT" src="https://img.shields.io/badge/-JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
   <img alt="Postman" src="https://img.shields.io/badge/-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" />
+  <img alt="Socket.IO" src="https://img.shields.io/badge/-Socket.IO-010101?style=flat-square&logo=socket.io&logoColor=white" />
   <img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
   <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000" />
   <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
@@ -30,6 +31,7 @@
   <li>🗄️ Experienced with <b>Mongoose</b>, <b>MongoDB Atlas</b>, pagination, and aggregation pipelines.</li>
   <li>🧪 I test endpoints using <b>Postman</b> and write reusable middlewares & validators.</li>
   <li>⚙️ Focused on writing clean, scalable backend services.</li>
+  <li>💬 I also use <b>Socket.IO</b> for real-time communication (chat apps, notifications, live updates).</li>
   <li>🌱 Currently learning <b>Docker</b> & <b>CI/CD</b>.</li>
 </ul>
 
@@ -60,7 +62,7 @@
     </tr>
     <tr>
       <td><b>Chat App (Beginner)</b></td>
-      <td>Node.js, Socket.io, MongoDB</td>
+      <td>Node.js, Socket.IO, MongoDB</td>
       <td>Real-time messaging, JWT, Rooms</td>
       <td><a href="https://github.com/anwar-dev55/Chatting-app">Repo</a></td>
     </tr>
@@ -78,3 +80,18 @@ app.use((err, req, res, next) => {
   const message = err.message || 'Internal Server Error';
   res.status(status).json({ success: false, message });
 });
+
+// Example: Socket.IO error handling
+io.on('connection', (socket) => {
+  console.log('✅ New client connected');
+
+  socket.on('error', (err) => {
+    console.error('❌ Socket.IO Error:', err.message);
+    socket.emit('errorMessage', { success: false, message: err.message });
+  });
+
+  socket.on('disconnect', () => {
+    console.log('⚡ Client disconnected');
+  });
+});
+
