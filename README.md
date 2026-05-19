@@ -49,22 +49,24 @@
   </thead>
   <tbody>
     <tr>
-      <td><b>Task Manager API</b></td>
-      <td>Node.js, Express, MongoDB, JWT</td>
-      <td>Authentication, CRUD, Validation, Pagination</td>
-      <td><a href="https://github.com/anwar-dev55/Task-Manager">Repo</a></td>
+      <td><b>LiveScore App</b></td>
+      <td>Node.js, Express, Socket.IO, MongoDB</td>
+      <td>Live Match Updates, Real-time Notifications, Authentication</td>
+      <td><a href="#">Repo</a></td>
     </tr>
+
     <tr>
-      <td><b>Book Management with Authentication</b></td>
+      <td><b>Studify</b></td>
       <td>Node.js, Express, MongoDB, React</td>
-      <td>User Authentication, Protected Routes, CRUD Operations</td>
-      <td><a href="https://github.com/anwar-dev55/Book-mangement-with-authentication">Repo</a></td>
+      <td>Course Management, Authentication, Student Dashboard</td>
+      <td><a href="#">Repo</a></td>
     </tr>
+
     <tr>
-      <td><b>Chat App (Beginner)</b></td>
-      <td>Node.js, Socket.IO, MongoDB</td>
-      <td>Real-time Messaging, JWT Authentication, Chat Rooms</td>
-      <td><a href="https://github.com/anwar-dev55/Chatting-app">Repo</a></td>
+      <td><b>E-Learning System</b></td>
+      <td>Node.js, Express, MongoDB, React</td>
+      <td>Instructor & Student Roles, Video Lessons, Progress Tracking</td>
+      <td><a href="#">Repo</a></td>
     </tr>
   </tbody>
 </table>
@@ -78,7 +80,11 @@
 app.use((err, req, res, next) => {
   const status = err.status || 500;
   const message = err.message || 'Internal Server Error';
-  res.status(status).json({ success: false, message });
+
+  res.status(status).json({
+    success: false,
+    message
+  });
 });
 
 // Example: Socket.IO error handling
@@ -87,6 +93,7 @@ io.on('connection', (socket) => {
 
   socket.on('error', (err) => {
     console.error('❌ Socket.IO Error:', err.message);
+
     socket.emit('errorMessage', {
       success: false,
       message: err.message
@@ -97,3 +104,4 @@ io.on('connection', (socket) => {
     console.log('⚡ Client disconnected');
   });
 });
+```
