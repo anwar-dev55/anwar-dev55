@@ -2,7 +2,7 @@
 
 <p>Welcome to my page! </br> I'm <b>Anwar Marof</b>, a <b>Backend Developer</b> from <img src="https://cdn-icons-png.flaticon.com/512/197/197600.png" width="13"/> <b>Egypt</b>.</p>
 
-<p>مرحبًا! أنا <b>أنور معروف</b> مطوّر Backend متخصص في <b>Node.js</b> و<b>Express</b> و<b>MongoDB</b>، أبني <b>REST APIs</b> نظيفة وآمنة، وأستخدم <b>React</b> لبناء واجهات تفاعلية، بالإضافة إلى <b>HTML</b> و<b>CSS</b> و<b>JavaScript</b> و<b>Socket.IO</b> للتواصل اللحظي.</p>
+<p>Hello! I'm <b>Anwar Marof</b>, a Backend Developer specialized in <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>. I build clean and secure <b>REST APIs</b>, and I also use <b>React</b> to create interactive user interfaces, along with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>Socket.IO</b> for real-time communication.</p>
 
 <h3>🛠️ Things I code with</h3>
 <p>
@@ -27,12 +27,12 @@
 
 <h3>📌 About me</h3>
 <ul>
-  <li>🔭 I build secure, well-documented <b>REST APIs</b> with <b>JWT auth</b>, <b>role-based access</b>, and clean architecture.</li>
+  <li>🔭 I build secure, well-documented <b>REST APIs</b> with <b>JWT authentication</b>, <b>role-based access control</b>, and clean architecture.</li>
   <li>🗄️ Experienced with <b>Mongoose</b>, <b>MongoDB Atlas</b>, pagination, and aggregation pipelines.</li>
-  <li>🧪 I test endpoints using <b>Postman</b> and write reusable middlewares & validators.</li>
-  <li>⚙️ Focused on writing clean, scalable backend services.</li>
-  <li>💬 I also use <b>Socket.IO</b> for real-time communication (chat apps, notifications, live updates).</li>
-  <li>🌱 Currently learning <b>Docker</b> & <b>CI/CD</b>.</li>
+  <li>🧪 I test endpoints using <b>Postman</b> and create reusable middlewares and validators.</li>
+  <li>⚙️ Focused on building clean, scalable, and maintainable backend services.</li>
+  <li>💬 I use <b>Socket.IO</b> for real-time applications such as chat apps, notifications, and live updates.</li>
+  <li>🌱 Currently learning <b>Docker</b> and <b>CI/CD</b>.</li>
 </ul>
 
 ---
@@ -51,19 +51,19 @@
     <tr>
       <td><b>Task Manager API</b></td>
       <td>Node.js, Express, MongoDB, JWT</td>
-      <td>Auth, CRUD, Validation, Pagination</td>
+      <td>Authentication, CRUD, Validation, Pagination</td>
       <td><a href="https://github.com/anwar-dev55/Task-Manager">Repo</a></td>
     </tr>
     <tr>
       <td><b>Book Management with Authentication</b></td>
       <td>Node.js, Express, MongoDB, React</td>
-      <td>User Auth, Protected Routes, CRUD</td>
+      <td>User Authentication, Protected Routes, CRUD Operations</td>
       <td><a href="https://github.com/anwar-dev55/Book-mangement-with-authentication">Repo</a></td>
     </tr>
     <tr>
       <td><b>Chat App (Beginner)</b></td>
       <td>Node.js, Socket.IO, MongoDB</td>
-      <td>Real-time messaging, JWT, Rooms</td>
+      <td>Real-time Messaging, JWT Authentication, Chat Rooms</td>
       <td><a href="https://github.com/anwar-dev55/Chatting-app">Repo</a></td>
     </tr>
   </tbody>
@@ -87,11 +87,13 @@ io.on('connection', (socket) => {
 
   socket.on('error', (err) => {
     console.error('❌ Socket.IO Error:', err.message);
-    socket.emit('errorMessage', { success: false, message: err.message });
+    socket.emit('errorMessage', {
+      success: false,
+      message: err.message
+    });
   });
 
   socket.on('disconnect', () => {
     console.log('⚡ Client disconnected');
   });
 });
-
