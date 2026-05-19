@@ -1,10 +1,14 @@
-<h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hey! Nice to see you.</h1>
+# <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hey! Nice to see you.
 
-<p>Welcome to my page! </br> I'm <b>Anwar Marof</b>, a <b>Backend Developer</b> from <img src="https://cdn-icons-png.flaticon.com/512/197/197600.png" width="13"/> <b>Egypt</b>.</p>
+Welcome to my page!  
+I'm **Anwar Marof**, a **Backend Developer** from <img src="https://cdn-icons-png.flaticon.com/512/197/197600.png" width="13"/> **Egypt**.
 
-<p>Hello! I'm <b>Anwar Marof</b>, a Backend Developer specialized in <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>. I build clean and secure <b>REST APIs</b>, and I also use <b>React</b> to create interactive user interfaces, along with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>Socket.IO</b> for real-time communication.</p>
+Hello! I'm **Anwar Marof**, a Backend Developer specialized in **Node.js**, **Express**, and **MongoDB**. I build clean and secure **REST APIs**, and I also use **React** to create interactive user interfaces, along with **HTML**, **CSS**, **JavaScript**, and **Socket.IO** for real-time communication.
 
-<h3>🛠️ Things I code with</h3>
+---
+
+## 🛠️ Things I code with
+
 <p>
   <img alt="Nodejs" src="https://img.shields.io/badge/-Node.js-43853d?style=flat-square&logo=node.js&logoColor=white" />
   <img alt="Express" src="https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white" />
@@ -25,76 +29,31 @@
 
 ---
 
-<h3>📌 About me</h3>
-<ul>
-  <li>🔭 I build secure, well-documented <b>REST APIs</b> with <b>JWT authentication</b>, <b>role-based access control</b>, and clean architecture.</li>
-  <li>🗄️ Experienced with <b>Mongoose</b>, <b>MongoDB Atlas</b>, pagination, and aggregation pipelines.</li>
-  <li>🧪 I test endpoints using <b>Postman</b> and create reusable middlewares and validators.</li>
-  <li>⚙️ Focused on building clean, scalable, and maintainable backend services.</li>
-  <li>💬 I use <b>Socket.IO</b> for real-time applications such as chat apps, notifications, and live updates.</li>
-  <li>🌱 Currently learning <b>Docker</b> and <b>CI/CD</b>.</li>
-</ul>
+## 📌 About me
+
+- 🔭 I build secure, well-documented **REST APIs** with **JWT authentication**, **role-based access control**, and clean architecture.
+- 🗄️ Experienced with **Mongoose**, **MongoDB Atlas**, pagination, and aggregation pipelines.
+- 🧪 I test endpoints using **Postman** and create reusable middlewares and validators.
+- ⚙️ Focused on building clean, scalable, and maintainable backend services.
+- 💬 I use **Socket.IO** for real-time applications such as chat apps, notifications, and live updates.
+- 🌱 Currently learning **Docker** and **CI/CD**.
 
 ---
 
-<h3>🚀 Highlighted projects</h3>
-<table>
-  <thead align="center">
-    <tr>
-      <td><b>🎁 Project</b></td>
-      <td><b>⚙️ Stack</b></td>
-      <td><b>🧩 Features</b></td>
-      <td><b>🔗 Link</b></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>LiveScore App</b></td>
-      <td>Node.js, Express, Socket.IO, MongoDB</td>
-      <td>Live Match Updates, Real-time Notifications, Authentication</td>
-      <td><a href="#">Repo</a></td>
-    </tr>
+## 🚀 Highlighted Projects
 
-    <tr>
-      <td><b>Studify</b></td>
-      <td>Node.js, Express, MongoDB, React</td>
-      <td>Course Management, Authentication, Student Dashboard</td>
-      <td><a href="#">Repo</a></td>
-    </tr>
-
-    <tr>
-      <td><b>E-Learning System</b></td>
-      <td>Node.js, Express, MongoDB, React</td>
-      <td>Instructor & Student Roles, Video Lessons, Progress Tracking</td>
-      <td><a href="#">Repo</a></td>
-    </tr>
-
-    <tr>
-      <td><b>Task Manager API</b></td>
-      <td>Node.js, Express, MongoDB, JWT</td>
-      <td>Authentication, CRUD, Validation, Pagination</td>
-      <td><a href="https://github.com/anwar-dev55/Task-Manager">Repo</a></td>
-    </tr>
-
-    <tr>
-      <td><b>Book Management with Authentication</b></td>
-      <td>Node.js, Express, MongoDB, React</td>
-      <td>User Authentication, Protected Routes, CRUD Operations</td>
-      <td><a href="https://github.com/anwar-dev55/Book-mangement-with-authentication">Repo</a></td>
-    </tr>
-
-    <tr>
-      <td><b>Chat App (Beginner)</b></td>
-      <td>Node.js, Socket.IO, MongoDB</td>
-      <td>Real-time Messaging, JWT Authentication, Chat Rooms</td>
-      <td><a href="https://github.com/anwar-dev55/Chatting-app">Repo</a></td>
-    </tr>
-  </tbody>
-</table>
+| 🎁 Project | ⚙️ Stack | 🧩 Features | 🔗 Link |
+|---|---|---|---|
+| **LiveScore App** | Node.js, Express, Socket.IO, MongoDB | Live Match Updates, Real-time Notifications, Authentication | [Repo](#) |
+| **Studify** | Node.js, Express, MongoDB, React | Course Management, Authentication, Student Dashboard | [Repo](#) |
+| **E-Learning System** | Node.js, Express, MongoDB, React | Instructor & Student Roles, Video Lessons, Progress Tracking | [Repo](#) |
+| **Task Manager API** | Node.js, Express, MongoDB, JWT | Authentication, CRUD, Validation, Pagination | [Repo](https://github.com/anwar-dev55/Task-Manager) |
+| **Book Management with Authentication** | Node.js, Express, MongoDB, React | User Authentication, Protected Routes, CRUD Operations | [Repo](https://github.com/anwar-dev55/Book-mangement-with-authentication) |
+| **Chat App (Beginner)** | Node.js, Socket.IO, MongoDB | Real-time Messaging, JWT Authentication, Chat Rooms | [Repo](https://github.com/anwar-dev55/Chatting-app) |
 
 ---
 
-<h3>🧑‍💻 Code samples</h3>
+## 🧑‍💻 Code Samples
 
 ```js
 // Example: Express error handler (centralized)
