@@ -68,6 +68,27 @@
       <td>Instructor & Student Roles, Video Lessons, Progress Tracking</td>
       <td><a href="#">Repo</a></td>
     </tr>
+
+    <tr>
+      <td><b>Task Manager API</b></td>
+      <td>Node.js, Express, MongoDB, JWT</td>
+      <td>Authentication, CRUD, Validation, Pagination</td>
+      <td><a href="https://github.com/anwar-dev55/Task-Manager">Repo</a></td>
+    </tr>
+
+    <tr>
+      <td><b>Book Management with Authentication</b></td>
+      <td>Node.js, Express, MongoDB, React</td>
+      <td>User Authentication, Protected Routes, CRUD Operations</td>
+      <td><a href="https://github.com/anwar-dev55/Book-mangement-with-authentication">Repo</a></td>
+    </tr>
+
+    <tr>
+      <td><b>Chat App (Beginner)</b></td>
+      <td>Node.js, Socket.IO, MongoDB</td>
+      <td>Real-time Messaging, JWT Authentication, Chat Rooms</td>
+      <td><a href="https://github.com/anwar-dev55/Chatting-app">Repo</a></td>
+    </tr>
   </tbody>
 </table>
 
